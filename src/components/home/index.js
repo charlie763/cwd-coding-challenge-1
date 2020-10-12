@@ -4,7 +4,7 @@ class Home extends React.Component {
     constructor(){
         super()
         this.state = {
-            weatherData: null
+            weatherData: false
         }
     }
 
@@ -21,6 +21,29 @@ class Home extends React.Component {
 
     weatherBox = () => {
         console.log(this.state.weatherData)
+        let weather = this.state.weatherData
+
+        if (weather){
+            return(
+                <div>
+                    <h3>Last Updated: { this.weatherTimeTranlsator(weather.LocalObservationDateTime) }</h3>
+                </div>
+            )
+        }
+    }
+
+    weatherTimeTranlsator = rawTime => {
+        let time = rawTime.split('T')[1]
+        time = time.split(':')
+        let hour = time[0]
+        let minute = time[1]
+
+        if(hour <= 12){
+            return `${hour}:${minute} AM`
+        } else if (hour > 12){
+            hour = hour - 12
+            return `${hour}:${minute} PM`
+        }
     }
 
     componentDidMount(){
