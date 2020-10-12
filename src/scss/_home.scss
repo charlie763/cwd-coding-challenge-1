@@ -1,0 +1,19 @@
+.home {
+    display: flex;
+    justify-content: center;
+
+
+    .home__card {
+        border: 1rem solid $color-one;
+        border-radius: 1rem;
+        width: 40vw;
+        text-align: center;
+
+        & > img {
+            height: auto;
+            width: 40vw;
+
+            border-radius: 1rem;
+        }
+    } 
+}

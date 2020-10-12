@@ -26,7 +26,7 @@ class Home extends React.Component {
         if (weather){
 
             return(
-                <div>
+                <div className='home__card'>
                     {this.DayOrNight(weather.IsDayTime)}
                     <h3>Last Updated: { this.weatherTimeTranlsator(weather.LocalObservationDateTime) }</h3>
                 </div>
@@ -62,11 +62,8 @@ class Home extends React.Component {
 
     render(){
         return(
-            <section>
-                <h1>
-                    This would be the Home!
-                    { this.weatherBox() }
-                </h1>
+            <section className='home'>
+                { this.weatherBox() }
             </section>
         )
     }
