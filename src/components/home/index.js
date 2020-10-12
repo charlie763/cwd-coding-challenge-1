@@ -24,11 +24,21 @@ class Home extends React.Component {
         let weather = this.state.weatherData
 
         if (weather){
+
             return(
                 <div>
+                    {this.DayOrNight(weather.IsDayTime)}
                     <h3>Last Updated: { this.weatherTimeTranlsator(weather.LocalObservationDateTime) }</h3>
                 </div>
             )
+        }
+    }
+
+    DayOrNight = bool => {
+        if(bool){
+            return <img src={require('./images/sun.jpg')} alt='placeholder' />
+        } else if (!bool){
+            return <img src={require('./images/moon.jpg')} alt='placeholer' />
         }
     }
 
