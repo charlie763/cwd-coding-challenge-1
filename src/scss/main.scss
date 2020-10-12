@@ -1,1 +1,6 @@
 @import './variables';
+@import './nav';
+
+body {
+    background-color: $background-color;
+}

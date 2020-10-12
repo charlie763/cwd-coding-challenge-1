@@ -1,0 +1,22 @@
+.main-nav {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-right: 10rem;
+    display: flex;
+
+    & > li {
+        list-style-type: none;
+        padding-left: 5vw;
+
+        & > a {
+            text-decoration: none;
+            font-size: 2rem;
+            font-weight: bolder;
+            color: $color-one;
+        }
+    }
+}
+
+.nav-push {
+    margin-left: auto;
+}

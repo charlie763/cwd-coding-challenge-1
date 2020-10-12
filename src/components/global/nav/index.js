@@ -4,11 +4,22 @@ class Nav extends React.Component {
     render(){
         return(
             <nav>
-                <ul>
-                    <li>item</li>
-                    <li>item</li>
-                    <li>item</li>
-                    <li>item</li>
+                <ul className='main-nav'>
+                    <li>
+                        <a href='/'>
+                            Home
+                        </a>
+                    </li>
+                    <li className='nav-push'>
+                        <a href='/about'>
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href='/contact'>
+                            Contact
+                        </a>
+                    </li>
                 </ul>
             </nav>
         )
