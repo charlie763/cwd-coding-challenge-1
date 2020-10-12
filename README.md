@@ -33,7 +33,9 @@ The image should either be the Sun or the Moon depending on the time of day set 
 
 [spec-api]: https://github.com/alinan-vn/cwd-coding-challenge-1/blob/master/read-me-images/specific-api.PNG "spec-api"
 
-Looking at the API, the best way to do this is using the "IsDayTime" value.
+Looking at the API, the best way to do this is using the "IsDayTime" value. 
+
+The Sun and Moon images are inside the 'home' folder located inside the 'components' folder.
 
 ### Temperature
 
