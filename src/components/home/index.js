@@ -28,8 +28,26 @@ class Home extends React.Component {
             return(
                 <div className='home__card'>
                     {this.DayOrNight(weather.IsDayTime)}
+                    <h3>Temperature</h3>
+                    <ul>
+                        <p>{weather.Temperature.Imperial.Value} F</p>
+                        <p>{weather.Temperature.Metric.Value} C</p>
+                    </ul>
+                    { this.weatherDescription(weather.HasPrecipitation, weather.WeatherText) }
                     <h3>Last Updated: { this.weatherTimeTranlsator(weather.LocalObservationDateTime) }</h3>
                 </div>
+            )
+        }
+    }
+
+    weatherDescription = (precipBool, weatherText) => {
+        if (precipBool){
+            return(
+                <p>It is currently raining and it is {weatherText}!</p>
+            )
+        } else if (!precipBool){
+            return(
+                <p>It is not curently raining and it is {weatherText}!</p>
             )
         }
     }
@@ -70,7 +88,3 @@ class Home extends React.Component {
 }
 
 export default Home;
-
-// fetch('http://dataservice.accuweather.com/currentconditions/v1/348308?apikey=BL84oxFsikLXeqZkAcPefEG8okzzcGzu&language=en-us')
-// .then(r => r.json())
-// .then(json => console.log(json))

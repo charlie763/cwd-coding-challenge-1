@@ -4,12 +4,7 @@ class Footer extends React.Component {
     render(){
         return(
             <footer>
-                <ul>
-                    <li>foot item</li>
-                    <li>foot item</li>
-                    <li>foot item</li>
-                    <li>foot item</li>
-                </ul>
+                <h1>Footer will be here!</h1>
             </footer>
         )
     }
