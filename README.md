@@ -16,3 +16,8 @@ The purpose of this Code Challenge isn't simply to test you on your abilities bu
 
 ## Main Page/ Main Objective
 
+![alt text][logo]
+
+[logo]: https://github.com/alinan-vn/cwd-coding-challenge-1/blob/master/read-me-images/main-card.PNG "main-card"
+
+
