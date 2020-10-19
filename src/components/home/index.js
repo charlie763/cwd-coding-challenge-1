@@ -25,4 +25,11 @@ class Home extends React.Component{
   }
 }
 
-export default connect(null, { fetchWeatherData })(Home)
+const mapStateToProps = state => ({
+  isDayTime: state.isDayTime, 
+  temperature: state.temperature, 
+  weather: state.weather, 
+  updateTime: state.updateTime
+})
+
+export default connect(mapStateToProps, { fetchWeatherData })(Home)
