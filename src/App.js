@@ -5,7 +5,7 @@ import About from './components/about/index'
 import Contact from './components/contact/index'
 import NavBar from './components/global/nav/index'
 import './App.css'
-// import Footer from './components/global/footer/index'
+import Footer from './components/global/footer/index'
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
           </Route>        
         </Switch>
       </Router>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
