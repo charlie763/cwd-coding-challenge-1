@@ -1,12 +1,25 @@
 import React from 'react';
-// import { Router, Route, Switch } from 'react-router-dom'
+import { Router, Route, Switch } from 'react-router-dom'
+import Home from './components/home/index'
+import About from './components/about/index'
+import Contact from './components/contact/index'
 
 
 function App() {
   return (
-    <body>
-      <h1>Hello World!</h1>
-    </body>
+    <Router>
+      <Switch>
+        <Route path="/">
+          <Home />
+        </Route>        
+        <Route path="/about">
+          <About />
+        </Route>
+        <Route path="/contact">
+          <Contact />
+        </Route>        
+      </Switch>
+    </Router>
   );
 }
 
