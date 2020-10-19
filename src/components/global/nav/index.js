@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-const NavBar = props => {
+const NavBar = () => {
   return(
     <nav id="navbar" className="navbar navbar-expand-lg navbar-light">
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-menu" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
