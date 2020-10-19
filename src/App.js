@@ -9,7 +9,7 @@ import './App.css'
 
 function App() {
   return (
-    <>
+    <div className="container">
       <Router>
         <NavBar />
         <Switch>
@@ -25,7 +25,7 @@ function App() {
         </Switch>
       </Router>
       {/* <Footer /> */}
-    </>
+    </div>
   );
 }
 
