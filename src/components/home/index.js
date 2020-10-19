@@ -26,8 +26,12 @@ class Home extends React.Component{
               <img className="card-img-top" src={this.props.isDayTime ? sun : moon} alt="sun or moon depending on time of day" />
               <div className="card-body">
                 <h5 className="text-center">Temperature</h5>
-                <p className="card-text text-center">{this.props.temperature.Imperial.Value}<img src={degree} alt="degree icon"/>{this.props.temperature.Imperial.Unit}</p>
-                <p className="card-text text-center">{this.props.temperature.Metric.Value}<img src={degree} alt="degree icon"/>{this.props.temperature.Metric.Unit}</p>
+                <p className="card-text text-center">
+                  {this.props.temperature.Imperial.Value}<img className="degree-symbol" src={degree} alt="degree icon"/>{this.props.temperature.Imperial.Unit}
+                </p>
+                <p className="card-text text-center">
+                  {this.props.temperature.Metric.Value}<img className="degree-symbol" src={degree} alt="degree icon"/>{this.props.temperature.Metric.Unit}
+                </p>
                 <p className="card-text text-center">{this.props.weather}</p>
                 <h5 className="text-center">Last Updated: {this.props.updateTime}</h5>
               </div>
