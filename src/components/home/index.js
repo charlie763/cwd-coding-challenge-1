@@ -19,14 +19,14 @@ class Home extends React.Component{
       case "complete":
         return(
           <div className="row justify-content-center py-3">
-            <div className="card home-card">
+            <div className="card home-card mb-3">
               <img className="card-img-top" src={this.props.isDayTime ? sun : moon} alt="Card image cap" />
-              <div className="card-body justify-content-center">
-                <h5 className="card-title">Temperature</h5>
-                <p className="card-text">{this.props.temperature.Imperial.Value}<img src={degree}/>{this.props.temperature.Imperial.Unit}</p>
-                <p className="card-text">{this.props.temperature.Metric.Value}<img src={degree}/>{this.props.temperature.Metric.Unit}</p>
-                <p className="card-text">{this.props.weather}</p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
+              <div className="card-body">
+                <h5 className="text-center">Temperature</h5>
+                <p className="card-text text-center">{this.props.temperature.Imperial.Value}<img src={degree}/>{this.props.temperature.Imperial.Unit}</p>
+                <p className="card-text text-center">{this.props.temperature.Metric.Value}<img src={degree}/>{this.props.temperature.Metric.Unit}</p>
+                <p className="card-text text-center">{this.props.weather}</p>
+                <h5 className="text-center">Last Updated: {this.props.updateTime}</h5>
               </div>
             </div>
           </div>

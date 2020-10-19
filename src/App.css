@@ -1,3 +1,13 @@
 .home-card {
-  width: 18rem;
+  width: 20rem;
+  border-color: #1e947a!important;
+  border: 3px solid #1e947a!important;
+}
+
+.primary-background {
+  background-color: #dd9494;
+}
+
+.nav-text {
+  color: #1e947a;
 }

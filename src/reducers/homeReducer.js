@@ -22,7 +22,7 @@ function homeReducer(state = {
         return {
           isDayTime: action.weatherData.IsDayTime,
           temperature: action.weatherData.Temperature,
-          weather: firstHalf + ' and it is ' + secondHalf,
+          weather: firstHalf + ', and it is ' + secondHalf,
           updateTime: `${hours > 12 ? hours - 12 : hours}:${date.getMinutes()} ${hours > 11 ? 'PM' : 'AM'}`,
           loadStatus: "complete"
         }
