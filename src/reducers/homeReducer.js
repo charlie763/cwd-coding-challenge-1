@@ -11,6 +11,7 @@ function homeReducer(state = {
           ...state,
           loadedStatus: "pending"
         }
+      // For the LOAD DATA case I chose to handle much of the formatting of the data here. For more complex applications, I would leave the data more as is and handle the formatting within the components or in utility functions.
       case "LOAD_DATA":
         const weatherText = action.weatherData.WeatherText
         const firstHalf = action.weatherData.HasPrecipitation ? "It is currently raining" : "It is currently not raining" 
@@ -33,8 +34,3 @@ function homeReducer(state = {
 }
 
 export default homeReducer
-
-
-// Temperature: {Metric: {…}, Imperial: {…}}
-//   Imperial: {Value: 49, Unit: "F", UnitType: 18}
-//   Metric: {Value: 9.4, Unit: "C", UnitType: 17}

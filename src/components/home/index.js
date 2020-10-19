@@ -5,6 +5,9 @@ import moon from './images/moon.jpg'
 import sun from './images/sun.jpg'
 import degree from './images/degree_symbol.svg'
 
+// This class serves as both a container and presenter of data. For more complex applications,
+// I would consider splitting up the two. It connects to the redux store, triggers the fetch action
+// upon mounting, and then displays the data return by fetch (if there is data loaded).
 class Home extends React.Component{
   componentDidMount(){
     this.props.fetchWeatherData()
