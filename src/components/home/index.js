@@ -19,7 +19,7 @@ class Home extends React.Component{
       case "complete":
         return(
           <div className="row justify-content-center py-3">
-            <div className="card home-card mb-3">
+            <div className="card home-card mb-3 primary-background">
               <img className="card-img-top" src={this.props.isDayTime ? sun : moon} alt="Card image cap" />
               <div className="card-body">
                 <h5 className="text-center">Temperature</h5>
