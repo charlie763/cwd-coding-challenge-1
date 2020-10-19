@@ -20,11 +20,11 @@ class Home extends React.Component{
         return(
           <div className="row justify-content-center py-3">
             <div className="card home-card mb-3 primary-background">
-              <img className="card-img-top" src={this.props.isDayTime ? sun : moon} alt="Card image cap" />
+              <img className="card-img-top" src={this.props.isDayTime ? sun : moon} alt="sun or moon image depending on time of day" />
               <div className="card-body">
                 <h5 className="text-center">Temperature</h5>
-                <p className="card-text text-center">{this.props.temperature.Imperial.Value}<img src={degree}/>{this.props.temperature.Imperial.Unit}</p>
-                <p className="card-text text-center">{this.props.temperature.Metric.Value}<img src={degree}/>{this.props.temperature.Metric.Unit}</p>
+                <p className="card-text text-center">{this.props.temperature.Imperial.Value}<img src={degree} alt="degree icon"/>{this.props.temperature.Imperial.Unit}</p>
+                <p className="card-text text-center">{this.props.temperature.Metric.Value}<img src={degree} alt="degree icon"/>{this.props.temperature.Metric.Unit}</p>
                 <p className="card-text text-center">{this.props.weather}</p>
                 <h5 className="text-center">Last Updated: {this.props.updateTime}</h5>
               </div>
