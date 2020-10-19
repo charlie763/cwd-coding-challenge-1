@@ -9,14 +9,14 @@ const NavBar = props => {
       </button>
       <div className="collapse navbar-collapse justify-content-between" id="nav-menu">
         <div>
-          <NavLink className="nav-text" to="/">Home</NavLink>
+          <NavLink className="nav-text mx-3" to="/">Home</NavLink>
         </div>
         <ul className="navbar-nav">
           <li className="nav-item">
-            <NavLink className="nav-text" to="/about">About</NavLink>
+            <NavLink className="nav-text mx-3" to="/about">About</NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-text" to="/contact">Contact</NavLink>
+            <NavLink className="nav-text mx-3" to="/contact">Contact</NavLink>
           </li>
         </ul>
       </div>
