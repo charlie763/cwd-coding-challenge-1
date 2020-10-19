@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { fetchWeatherData } from '../../actions/homeActions'
 import moon from './images/moon.jpg'
 import sun from './images/sun.jpg'
+import degree from './images/degree_symbol.svg'
 
 class Home extends React.Component{
   componentDidMount(){
@@ -22,7 +23,9 @@ class Home extends React.Component{
               <img className="card-img-top" src={this.props.isDayTime ? sun : moon} alt="Card image cap" />
               <div className="card-body justify-content-center">
                 <h5 className="card-title">Temperature</h5>
-                <p className="card-text">{this.props.temperature.Imperial.Value} {this.props.temperature.Imperial.Unit}</p>
+                <p className="card-text">{this.props.temperature.Imperial.Value}<img src={degree}/>{this.props.temperature.Imperial.Unit}</p>
+                <p className="card-text">{this.props.temperature.Metric.Value}<img src={degree}/>{this.props.temperature.Metric.Unit}</p>
+                <p className="card-text">{this.props.weather}</p>
                 <a href="#" className="btn btn-primary">Go somewhere</a>
               </div>
             </div>
