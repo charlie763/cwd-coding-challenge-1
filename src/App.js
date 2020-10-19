@@ -4,6 +4,7 @@ import Home from './components/home/index'
 import About from './components/about/index'
 import Contact from './components/contact/index'
 import NavBar from './components/global/nav/index'
+import './App.css'
 // import Footer from './components/global/footer/index'
 
 function App() {
